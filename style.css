@@ -1,0 +1,115 @@
+body {
+	background-color: #606060;
+	font-family: 'Helvetica', sans-serif;
+}
+
+.menu {
+	height: 200px;
+	width: 100%;
+	background-color: #606060;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tdbar {
+	background-color: white;
+	width: 40%;
+	height: 50px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#textContainer {
+	background-color: white;
+	width: 90%;
+	height: 50px;
+	font-size: 25;
+	display: flex;
+	align-items:center;
+}
+
+#input {
+	height: 100%;
+	width: 80%;
+	border: 0px;
+	outline: none;
+	font-size: 20;
+}
+
+.taskContainer {
+	background-color: white;
+	width: 38%;
+	height: 60px;
+	font-size: 25;
+	border-radius: 5px;
+	margin: 10px;
+	margin-left: 31%;
+	display: flex;
+	align-items: center;
+}
+
+.taskCheckbox {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    height:	30px;
+	width: 30px;
+	margin: 20px;
+	background: dark-grey;
+	border: 3px solid gray;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.taskCheckbox:checked {
+    background: grey; /* Couleur de fond lorsque coché */
+}
+
+.taskCheckbox:checked::after {
+    content: '✔'; /* Symbole "check" */
+    color: white; /* Couleur du symbole */
+    font-size: 25px; /* Taille du symbole */
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+}
+
+.taskLabel {
+	width: 70%;
+	font-size: 20;
+	color: black; 
+}
+
+#difficulty {
+	height: 100%;
+	width: 20%;
+	border: 0px;
+	outline: none;
+	font-size: 20;
+}
+
+.difficultyLabel {
+	width: 20% ;
+	font-size: 20; 
+}
+
+.deleteButton {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background:url(./images/trashcan.png) no-repeat center;
+    background-size: contain;
+	height: 30px;
+	width: 30px;
+	border: none;
+	cursor: pointer;
+	margin-right: 20px;
+	transition: all .2s ease-in-out;
+}
+
+.deleteButton:hover {
+	transform: scale(1.5);
+}
