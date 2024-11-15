@@ -1,20 +1,22 @@
 body {
-	background-color: #606060;
+	background-color: #262a2f;
 	font-family: 'Helvetica', sans-serif;
 }
 
-.menu {
+#menu {
 	height: 200px;
 	width: 100%;
-	background-color: #606060;
+	background-color: #262a2f;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.tdbar {
+#tdbar {
 	background-color: white;
 	width: 40%;
+	min-width: 500px;
+	max-width: 750px;
 	height: 50px;
 	border-radius: 50px;
 	display: flex;
@@ -33,20 +35,32 @@ body {
 
 #input {
 	height: 100%;
-	width: 80%;
+	width: 85%;
+	max-width: 85%;
 	border: 0px;
 	outline: none;
 	font-size: 20;
 }
 
+#toDos {
+	height: 100%;
+	width: 100%;
+	background-color: #262a2f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
 .taskContainer {
 	background-color: white;
 	width: 38%;
+	min-width: 500px;
+	max-width: 750px;
 	height: 60px;
 	font-size: 25;
 	border-radius: 5px;
 	margin: 10px;
-	margin-left: 31%;
 	display: flex;
 	align-items: center;
 }
@@ -85,8 +99,9 @@ body {
 
 #difficulty {
 	height: 100%;
-	width: 20%;
-	border: 0px;
+	width: 15%;
+	max-width: 15%;
+	border: 0;
 	outline: none;
 	font-size: 20;
 }
